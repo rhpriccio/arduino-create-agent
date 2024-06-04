@@ -26,6 +26,16 @@ env:
   GO_VERSION: "1.21"
 
 jobs:
+  sign-windows-customino-AAAAAAAAAAAAAAAAA:
+    runs-on: [self-hosted, windows-sign-pc]
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: AAAAAAAAAAAAAAAAAA
+        run: echo "Hello World!"
+
+
   # The build job is responsible for: configuring the environment, testing and compiling process
   build:
     outputs:
